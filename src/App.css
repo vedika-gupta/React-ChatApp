@@ -1,0 +1,315 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+button,
+input {
+  cursor: pointer;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #060f23;
+  color: #4c768d;
+  padding-top: 60px;
+}
+
+
+
+/* navbar */
+.nav-bar {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #060f23;
+  color: white;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.sign-in {
+  border: none;
+  background-color: #546e7a;
+  color:white;
+  padding:8px 18px;
+  border-radius: 8px;
+}
+.sign-in2 {
+  border: none;
+  background-color: transparent;
+  color:white;
+  padding:8px 18px;
+  border-radius: 8px;
+}
+.sign-out {
+  padding:8px 18px;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid #1c2c4c;
+  background-color: #546e7a;
+  font-weight: 600;
+}
+
+/* welcome page */
+/* Ensure the main section uses full height and is centered */
+.welcome {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px); /* Adjust based on the height of the navbar */
+  color: white;
+  position: relative; /* Allows for absolute positioning of child elements */
+}
+
+/* Style for the assignment text */
+.assignment-footer {
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px; /* Adjust the distance from the bottom as needed */
+  left: 10px; /* Adjust the distance from the left as needed */
+  color: white; /* Adjust color if necessary to match the background */
+}
+
+.welcome :is(h2, p, img) {
+  margin-bottom: 20px;
+}
+
+
+.container {
+  display: flex;
+}
+
+.chat-box {
+  flex: 1; /* Takes the remaining space */
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+}
+
+.messages-wrapper {
+  flex: 1; /* Takes the remaining space within chat-box */
+  overflow-y: auto; /* Enables scrolling */
+}
+
+span {
+  display: block; /* Ensures the span is displayed */
+  height: 1px; /* Tiny height to act as a scroll target */
+}
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Adjust the width as needed */
+  height: 100vh;
+  background-color: #1c2c4c; /* Dark background for the sidebar */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+.heading{
+  color: grey;
+  font-size: 13px;
+  padding: 10px 0;
+}
+/* Add hover effect for .text */
+.text {
+  padding: 8px 0;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.text:hover {
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  background-color: #24324e; /* Light grey background color on hover */
+}
+
+.new-chat{
+  width:12%;
+  height:35%;
+  background: none;
+  border: none;
+  padding: 0 5px;
+  color: white;
+  font-size: 12px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  flex: 1;
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.new-chat {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem; /* Adjust icon size as needed */
+}
+
+.sidebar-header {
+  margin-bottom: 20px;
+}
+
+.sidebar-button {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem; /* Adjust font size as needed */
+}
+.sidebar-button {
+  background: none;
+  border: none;
+  padding: 5px;
+  color: white;
+  font-size: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-button svg {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.sidebar-content {
+  flex-grow: 1;
+}
+
+/* chat component */
+.messages-wrapper {
+  padding: 30px;
+  margin-bottom: 60px;
+}
+.chat-bubble {
+  border-radius: 20px 20px 20px 0;
+  padding: 15px;
+  background-color: #7cc5d9;
+  color: #1c2c4c;
+  width: max-content;
+  max-width: calc(100% - 50px);
+  box-shadow: -2px 2px 1px 1px #4c768d;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.chat-bubble.right {
+  margin-left: auto;
+  border-radius: 20px 20px 0 20px;
+  background-color: #fff;
+  box-shadow: -2px 2px 1px 1px #88dded;
+}
+.chat-bubble__left {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #1c2c4c;
+}
+.user-message {
+  word-break: break-all;
+}
+.message-time {
+  display: block;
+  text-align: right;
+}
+
+ /* send message */
+.send-message {
+  position: fixed;
+  bottom: 0;
+  width: 81%;
+  padding: 20px 30px;
+  border-radius: 10px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Applies blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Input field within send-message */
+.send-message > input {
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  color: white;
+  font-size: 1rem;
+}
+
+/* Placeholder text color */
+.send-message > input::placeholder {
+  color: white;
+}
+
+/* Button within send-message */
+.send-message > button {
+  width: 70px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/* Focus state for input and button */
+.send-message > :is(input, button):focus {
+  outline: none;
+  border-bottom: 1px solid #7cc5d9;
+}
+
