@@ -9,7 +9,7 @@ This project is a simple, visually appealing chat interface built using React an
 
 ## Demo
 
-You can access the live demo of the application [here](#).
+You can access the live demo of the application [here](https://react-chat-app-weld-theta.vercel.app/).
 
 Alternatively, you can watch a video demo showcasing the functionality [here](https://www.loom.com/share/c497ed28fa8d445e960f2ea8ae9d796e?sid=8faf7864-1c7b-462d-a49b-abd6ba3e91ad).
 
