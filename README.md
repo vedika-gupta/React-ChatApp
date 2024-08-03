@@ -36,3 +36,11 @@ Once the application is running, you can log in using your Firebase credentials 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+
+
+![Screenshot (284)](https://github.com/user-attachments/assets/e7cb23e2-c9af-403a-9ae6-0767b26fe8e2)
+
+
+![Screenshot (283)](https://github.com/user-attachments/assets/0e95b272-c717-4cd5-9c79-d979aa075b03)
+
