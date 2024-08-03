@@ -7,6 +7,12 @@ This project is a simple, visually appealing chat interface built using React an
 **Name:** Vedika Gupta  
 **Roll No:** AP21110010515
 
+## Demo
+
+You can access the live demo of the application [here](#).
+
+Alternatively, you can watch a video demo showcasing the functionality [here](#).
+
 ## Features
 
 - Single-page application (SPA) with a chat interface
@@ -27,16 +33,6 @@ Once the application is running, you can log in using your Firebase credentials 
 - **Firebase**: Authentication and data storage
 - **Markdown-it**: Markdown rendering
 
-## Demo
-
-You can access the live demo of the application [here](#).
-
-Alternatively, you can watch a video demo showcasing the functionality [here](#).
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
