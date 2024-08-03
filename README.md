@@ -41,5 +41,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ![Screenshot (284)](https://github.com/user-attachments/assets/e7cb23e2-c9af-403a-9ae6-0767b26fe8e2)
 
-![image](https://github.com/user-attachments/assets/e7bdd967-5f45-4b01-ad83-8ce2a663907c)
+![image](https://github.com/user-attachments/assets/be3c97fa-d536-4080-ac11-9d7e458bc050)
 
